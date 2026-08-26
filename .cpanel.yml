@@ -5,5 +5,17 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp prospect-intelligence.html $DEPLOYPATH
+    - /bin/cp tender-intelligence.html $DEPLOYPATH
+    - /bin/cp dispute-support.html $DEPLOYPATH
+    - /bin/cp payment-recovery.html $DEPLOYPATH
+    - /bin/cp payment-administration.html $DEPLOYPATH
+    - /bin/cp fees.html $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp privacy.html $DEPLOYPATH
+    - /bin/cp terms.html $DEPLOYPATH
+    - /bin/cp contact-handler.php $DEPLOYPATH
+    - /bin/cp thank-you.html $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
-# Pavilion deployment
+    - /bin/cp -R downloads $DEPLOYPATH
