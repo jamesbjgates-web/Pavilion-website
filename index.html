@@ -19,10 +19,10 @@
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <nav class="main-nav" aria-label="Primary navigation">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button><nav class="main-nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
         <a href="prospect-intelligence.html">Prospect Intelligence</a>
-        <a href="#approach">How We Work</a>
+        <a href="#intelligence">How We Work</a>
         <a href="about.html">About</a>
         <a class="nav-cta" href="contact.html">Contact Pavilion</a>
       </nav>
@@ -172,7 +172,28 @@
       </div>
     </section>
 
-    <section class="section about-section" id="about">
+    
+<section class="section proof-section">
+  <div class="container proof-grid">
+    <div>
+      <span class="eyebrow">Show the evidence</span>
+      <h2>What Prospect Intelligence actually looks like</h2>
+      <p class="section-lead">A prospect is not included because it appeared in a database. The customer receives the commercial context, the reason it surfaced, the evidence behind the recommendation and the reasons it may still fail.</p>
+      <a class="button button-secondary" href="prospect-intelligence.html">See Prospect Intelligence</a>
+    </div>
+    <div class="proof-card">
+      <div class="proof-head"><small>ILLUSTRATIVE / ANONYMISED</small><h3>North West Manufacturing Prospect</h3></div>
+      <div class="proof-body">
+        <div class="proof-row"><strong>Trigger</strong><span>Recent factory expansion and new production investment.</span></div>
+        <div class="proof-row"><strong>Commercial fit</strong><span>Large industrial site with strong daytime operating profile.</span></div>
+        <div class="proof-row"><strong>Why now</strong><span>Capital programme currently active; procurement window may still be open.</span></div>
+        <div class="proof-row"><strong>Disqualification check</strong><span>No public evidence identified of the target solution already being contracted.</span></div>
+        <div class="proof-row"><strong>Evidence</strong><span>Corporate filings, planning/project sources, company material and trade reporting.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section about-section" id="about">
       <div class="container about-grid">
         <div>
           <span class="eyebrow">About Pavilion</span>
@@ -194,9 +215,19 @@
           <p>Whether you need better prospects, support with a live commercial issue or a structured approach to overdue payments, Pavilion can start by understanding the problem.</p>
         </div>
         <div class="contact-panel">
-          <p class="contact-title">Contact Pavilion</p>
-          <p>Contact details and the secure enquiry form will be connected before launch.</p>
-          <a class="button button-light" href="#top">Back to top</a>
+          <p class="contact-title">Tell us what you are trying to solve</p>
+          <form action="contact-handler.php" method="post">
+            <div class="form-grid">
+              <div class="form-field"><label for="name">Name</label><input id="name" name="name" required></div>
+              <div class="form-field"><label for="company">Company</label><input id="company" name="company"></div>
+              <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+              <div class="form-field"><label for="phone">Telephone</label><input id="phone" name="phone"></div>
+              <div class="form-field full"><label for="service">Area of interest</label><select id="service" name="service"><option>Prospect Intelligence</option><option>Commercial &amp; Dispute Support</option><option>Debt &amp; Payment Administration</option><option>Other / unsure</option></select></div>
+              <div class="form-field full"><label for="message">Briefly describe the issue</label><textarea id="message" name="message" required></textarea></div>
+              <div class="form-field full"><button class="button button-light" type="submit">Send enquiry</button></div>
+            </div>
+            <p class="form-help">Do not include passwords or highly sensitive information in this form.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -204,9 +235,7 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/pavilion-logo.png" alt="Pavilion">
-        <p>Commercial solutions for the construction sector.</p>
+      <div class="footer-brand"><div class="footer-wordmark">PAVILION</div><p>Commercial solutions for the construction sector.</p>
       </div>
       <div class="footer-links">
         <a href="#services">Services</a>

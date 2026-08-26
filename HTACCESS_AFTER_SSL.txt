@@ -1,0 +1,4 @@
+# Activate only after a valid SSL certificate is installed for pspt.ltd and www.pspt.ltd.
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
