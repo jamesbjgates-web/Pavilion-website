@@ -24,14 +24,14 @@ if (!$name || !$email || !$message) {
     exit("Please complete your name, email address and message.");
 }
 
-if ($recipient === "hello@pspt.ltd") {
+if ($recipient === "REPLACE_WITH_PAVILION_EMAIL") {
     http_response_code(503);
     exit("The enquiry form is not yet connected to a Pavilion mailbox.");
 }
 
 $subject = "Pavilion website enquiry - " . $service;
 $body = "Name: $name\nCompany: $company\nEmail: $email\nTelephone: $phone\nArea of interest: $service\n\nMessage:\n$message\n";
-$headers = "From: website@pspt.ltd\r\nReply-To: " . $email . "\r\n";
+$headers = "From: hello@pspt.ltd\r\nReply-To: " . $email . "\r\n";
 
 if (mail($recipient, $subject, $body, $headers)) {
     header("Location: thank-you.html");
