@@ -1,1 +1,4 @@
-const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.main-nav');toggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');});document.querySelectorAll('.main-nav a').forEach(a=>a.addEventListener('click',()=>{nav?.classList.remove('open');toggle?.setAttribute('aria-expanded','false');}));const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
+const b=document.querySelector('.nav-toggle'),n=document.querySelector('.main-nav');
+b?.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});
+document.querySelectorAll('.main-nav a').forEach(a=>a.addEventListener('click',()=>n?.classList.remove('open')));
+document.querySelectorAll('#year').forEach(e=>e.textContent=new Date().getFullYear());
