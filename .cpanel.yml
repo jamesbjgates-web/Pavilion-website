@@ -19,3 +19,5 @@ deployment:
     - /bin/cp thank-you.html $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R downloads $DEPLOYPATH
+- /bin/cp robots.txt $DEPLOYPATH
+- /bin/cp sitemap.xml $DEPLOYPATH
