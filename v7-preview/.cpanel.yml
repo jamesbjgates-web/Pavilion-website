@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pspt/public_html/
+    # V7 PRIVATE PREVIEW ONLY - does not copy or replace production root files
+    - /bin/rm -rf ${DEPLOYPATH}v7-preview/
+    - /bin/mkdir -p ${DEPLOYPATH}v7-preview/
+    - /bin/cp -R v7-preview/. ${DEPLOYPATH}v7-preview/
