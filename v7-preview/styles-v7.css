@@ -127,3 +127,40 @@
  .journey-features .feature h3{margin-top:18px}
 }
 @media(max-width:680px){.inner-hero{padding-top:34px;padding-bottom:42px}}
+
+/* REV 7: tighter rhythm, SME positioning, corrected About principles, consistent type */
+.journey{padding:82px 0 88px}
+.intelligence{padding:88px 0}
+.services-editorial{padding:84px 0}
+.ethos{padding:82px 0}
+.cta{padding:64px 0}
+.content-section{padding:82px 0}
+.content-head{margin-bottom:46px}
+.page-cta{padding:68px 0}
+.statement{font-family:var(--sans);font-weight:750;letter-spacing:-.025em}
+
+.sme-focus{padding:0 0 84px;background:var(--paper)}
+.sme-panel{display:grid;grid-template-columns:150px 1fr;gap:34px;padding:42px 48px;background:linear-gradient(120deg,#eef8f7,#fbfaf7);border:1px solid rgba(22,139,135,.12)}
+.sme-icon{width:108px;height:108px;border-radius:50%;display:grid;place-items:center;background:rgba(33,185,177,.09);color:#168b87;font-size:58px;line-height:1}
+.sme-main h2{max-width:880px;font-size:clamp(34px,4vw,55px);line-height:1.02;letter-spacing:-.045em;margin:0 0 26px}
+.sme-copy{display:grid;grid-template-columns:1fr 1fr;gap:38px;max-width:980px}.sme-copy p{margin:0;color:var(--muted);font-size:15px}
+.sme-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px;border-top:1px solid rgba(22,139,135,.2);padding-top:24px}
+.sme-benefits>div{padding:0 26px;border-right:1px solid rgba(22,139,135,.18)}.sme-benefits>div:first-child{padding-left:0}.sme-benefits>div:last-child{border-right:0}
+.sme-benefits b,.sme-benefits span{display:block}.sme-benefits b{font-size:11px;letter-spacing:.055em;color:#168b87}.sme-benefits span{font-size:13px;color:var(--muted);margin-top:4px}
+
+/* About: keep ghost numbers clear of the technical line and nodes */
+.journey-features{padding-top:76px}
+.journey-features:before{top:64px}
+.journey-features .feature{padding-top:48px;min-height:235px}
+.journey-features .feature:before{top:-20px;left:28px}
+.journey-features .feature:first-child:before{left:0}
+.journey-features .feature:not(:last-child):after{top:-35px}
+.journey-features .feature .num{top:-72px;left:28px;font-size:58px}
+.journey-features .feature:first-child .num{left:0}
+.journey-features .feature h3{margin-top:0}
+
+@media(max-width:980px){
+ .sme-panel{grid-template-columns:1fr;padding:36px}.sme-icon{width:82px;height:82px;font-size:44px}.sme-copy{grid-template-columns:1fr}.sme-benefits{grid-template-columns:1fr}.sme-benefits>div,.sme-benefits>div:first-child{padding:14px 0;border-right:0;border-bottom:1px solid rgba(22,139,135,.15)}.sme-benefits>div:last-child{border-bottom:0}
+ .journey-features{padding:0;margin-left:4px}.journey-features .feature,.journey-features .feature:first-child{padding:16px 0 38px 38px}.journey-features .feature:before,.journey-features .feature:first-child:before{top:22px;left:-9px}.journey-features .feature .num,.journey-features .feature:first-child .num{position:static;font-size:12px;color:#168b87;-webkit-text-stroke:0}.journey-features .feature h3{margin-top:14px}
+}
+@media(max-width:680px){.journey,.intelligence,.services-editorial,.ethos{padding:66px 0}.sme-focus{padding-bottom:66px}.sme-panel{padding:28px 22px}.content-section{padding:62px 0}.page-cta{padding:58px 0}.cta{padding:56px 0}}
