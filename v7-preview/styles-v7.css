@@ -50,3 +50,18 @@
   .service-stage strong{font-size:14px;line-height:1.4;min-height:72px}
   .service-stage p{font-size:14px;line-height:1.58;min-height:142px}
 }
+
+
+/* V7 Rev 5 — statutory company-information footer */
+.site-footer-v7{padding:0;background:#061018;color:#d8e3e7;border-top:1px solid rgba(108,224,216,.18)}
+.footer-top{display:grid;grid-template-columns:1.35fr .8fr .7fr;gap:78px;padding:66px 0 52px}
+.footer-brand-v7 img{width:190px;filter:brightness(0) invert(1);display:block;margin-bottom:20px}
+.footer-brand-v7 p{max-width:390px;margin:0 0 24px;color:#9eb0b8;font-size:14px;line-height:1.65}
+.footer-talk{display:inline-block;color:var(--teal2);font-family:var(--mono);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(108,224,216,.55);padding-bottom:6px}
+.footer-nav-group{display:grid;align-content:start;gap:9px}.footer-nav-group span{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal2);margin-bottom:7px}.footer-nav-group a{color:#c3d0d5;text-decoration:none;font-size:12px}.footer-nav-group a:hover{color:#fff}
+.footer-registration{display:grid;grid-template-columns:220px 1fr;gap:40px;padding:34px 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.registration-title{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal2);padding-top:3px}
+.registration-details{display:grid;grid-template-columns:.85fr 1.4fr;gap:56px}.registration-details p{margin:0;color:#9eb0b8;font-size:11px;line-height:1.65}.registration-details strong{color:#eef5f7;font-weight:700}
+.footer-bottom{display:grid;grid-template-columns:auto auto 1fr;gap:30px;align-items:center;padding:22px 0 28px}.footer-bottom p{margin:0;color:#738891;font-size:10px}.footer-bottom-links{display:flex;gap:18px}.footer-bottom-links a{color:#9eb0b8;font-size:10px;text-decoration:none}.footer-bottom-links a:hover{color:var(--teal2)}.footer-status{text-align:right}
+@media(max-width:980px){.footer-top{grid-template-columns:1fr 1fr;gap:42px}.footer-brand-v7{grid-column:1/-1}.footer-registration{grid-template-columns:1fr;gap:14px}.registration-details{grid-template-columns:1fr 1fr;gap:32px}.footer-bottom{grid-template-columns:1fr auto}.footer-status{grid-column:1/-1;text-align:left}}
+@media(max-width:680px){.footer-top{grid-template-columns:1fr;padding:50px 0 38px}.footer-brand-v7{grid-column:auto}.registration-details{grid-template-columns:1fr;gap:18px}.footer-bottom{grid-template-columns:1fr;gap:12px}.footer-bottom-links{order:2}.footer-status{grid-column:auto}.footer-registration{padding:28px 0}}
