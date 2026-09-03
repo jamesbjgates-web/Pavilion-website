@@ -9,6 +9,7 @@ deployment:
     - /bin/cp tender-intelligence.html $DEPLOYPATH
     - /bin/cp dispute-support.html $DEPLOYPATH
     - /bin/cp payment-recovery.html $DEPLOYPATH
+    - /bin/cp payment-administration.html $DEPLOYPATH
     - /bin/cp fees.html $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
@@ -20,3 +21,7 @@ deployment:
     - /bin/cp -R downloads $DEPLOYPATH
     - /bin/cp robots.txt $DEPLOYPATH
     - /bin/cp sitemap.xml $DEPLOYPATH
+    # V7 PRIVATE PREVIEW - separate subdirectory; production files above remain unchanged
+    - /bin/rm -rf ${DEPLOYPATH}v7-preview/
+    - /bin/mkdir -p ${DEPLOYPATH}v7-preview/
+    - /bin/cp -R v7-preview/. ${DEPLOYPATH}v7-preview/
