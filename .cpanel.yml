@@ -2,7 +2,32 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/pspt/public_html/
-    # V7 PRIVATE PREVIEW ONLY - does not copy or replace production root files
+
+    # V7 PRODUCTION SITE
+    - /bin/mkdir -p ${DEPLOYPATH}assets/
+    - /bin/mkdir -p ${DEPLOYPATH}downloads/
+
+    - /bin/cp index.html ${DEPLOYPATH}index.html
+    - /bin/cp prospect-intelligence.html ${DEPLOYPATH}prospect-intelligence.html
+    - /bin/cp tender-intelligence.html ${DEPLOYPATH}tender-intelligence.html
+    - /bin/cp dispute-support.html ${DEPLOYPATH}dispute-support.html
+    - /bin/cp payment-recovery.html ${DEPLOYPATH}payment-recovery.html
+    - /bin/cp fees.html ${DEPLOYPATH}fees.html
+    - /bin/cp about.html ${DEPLOYPATH}about.html
+    - /bin/cp contact.html ${DEPLOYPATH}contact.html
+    - /bin/cp privacy.html ${DEPLOYPATH}privacy.html
+    - /bin/cp terms.html ${DEPLOYPATH}terms.html
+    - /bin/cp thank-you.html ${DEPLOYPATH}thank-you.html
+
+    - /bin/cp styles-v7.css ${DEPLOYPATH}styles-v7.css
+    - /bin/cp contact-handler.php ${DEPLOYPATH}contact-handler.php
+    - /bin/cp robots.txt ${DEPLOYPATH}robots.txt
+    - /bin/cp sitemap.xml ${DEPLOYPATH}sitemap.xml
+
+    - /bin/cp -R assets/. ${DEPLOYPATH}assets/
+    - /bin/cp -R downloads/. ${DEPLOYPATH}downloads/
+
+    # KEEP THE V7 PREVIEW AVAILABLE AS A BACKUP/REFERENCE
     - /bin/rm -rf ${DEPLOYPATH}v7-preview/
     - /bin/mkdir -p ${DEPLOYPATH}v7-preview/
     - /bin/cp -R v7-preview/. ${DEPLOYPATH}v7-preview/
