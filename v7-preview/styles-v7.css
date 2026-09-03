@@ -208,3 +208,34 @@
 /* Contact process uses the same technical journey treatment as other numbered processes. */
 .contact-journey{grid-template-columns:repeat(3,1fr)!important}
 @media(max-width:980px){.contact-journey{grid-template-columns:1fr!important}}
+
+/* V7 Rev 11 — typography and numbering consistency */
+/* Remove isolated legacy serif styling from customer-facing callouts. */
+.inner-note,.quote,.statement,.impact{font-family:var(--sans)!important;font-style:normal!important;font-weight:750;letter-spacing:-.025em}
+
+/* Numbered journeys: one restrained technical format across the site. */
+@media(min-width:981px){
+  .journey-line{padding-top:0;margin-top:8px}
+  .journey-line:before{top:34px}
+  .journey-line .process-step{padding:72px 30px 0;min-height:255px}
+  .journey-line .process-step:first-child{padding-left:0}
+  .journey-line .process-step .n,.journey-line .process-step:first-child .n{
+    top:0;left:0;font-family:var(--mono);font-size:12px;line-height:1;color:#168b87;
+    -webkit-text-stroke:0;letter-spacing:.12em;font-weight:700
+  }
+  .journey-line .process-step:before,.journey-line .process-step:first-child:before{top:26px;left:0;width:13px;height:13px}
+  .journey-line .process-step:not(:last-child):after{top:15px;right:-8px;font-size:30px;line-height:30px}
+  .journey-line .process-step h3{margin:0 0 14px}
+
+  .journey-features{padding-top:0;margin-top:8px}
+  .journey-features:before{top:34px}
+  .journey-features .feature,.journey-features .feature:first-child{padding-top:72px;min-height:235px}
+  .journey-features .feature .num,.journey-features .feature:first-child .num{
+    top:0;left:0;font-family:var(--mono);font-size:12px;line-height:1;color:#168b87;
+    -webkit-text-stroke:0;letter-spacing:.12em;font-weight:700
+  }
+  .journey-features .feature:before,.journey-features .feature:first-child:before{top:26px;left:0}
+  .journey-features .feature:not(:last-child):after{top:15px}
+  .journey-features .feature h3{margin-top:0}
+}
+.hero-keep{white-space:nowrap}
