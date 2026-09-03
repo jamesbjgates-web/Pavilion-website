@@ -128,61 +128,186 @@
 }
 @media(max-width:680px){.inner-hero{padding-top:34px;padding-bottom:42px}}
 
+/* REV 7: tighter rhythm, SME positioning, corrected About principles, consistent type */
+.journey{padding:82px 0 88px}
+.intelligence{padding:88px 0}
+.services-editorial{padding:84px 0}
+.ethos{padding:82px 0}
+.cta{padding:64px 0}
+.content-section{padding:82px 0}
+.content-head{margin-bottom:46px}
+.page-cta{padding:68px 0}
+.statement{font-family:var(--sans);font-weight:750;letter-spacing:-.025em}
 
-/* FINAL PREVIEW REVISION: locked review corrections */
-/* Homepage lifecycle introduction: keep supporting line with the heading rather than drifting right. */
-.journey .section-head{display:block}
-.journey .section-head h2{max-width:980px;margin-bottom:26px}
-.journey .section-head p{max-width:690px;margin:0 0 68px;text-align:left}
+.sme-focus{padding:0 0 84px;background:var(--paper)}
+.sme-panel{display:grid;grid-template-columns:150px 1fr;gap:34px;padding:42px 48px;background:linear-gradient(120deg,#eef8f7,#fbfaf7);border:1px solid rgba(22,139,135,.12)}
+.sme-icon{width:108px;height:108px;border-radius:50%;display:grid;place-items:center;background:rgba(33,185,177,.09);color:#168b87;font-size:58px;line-height:1}
+.sme-main h2{max-width:880px;font-size:clamp(34px,4vw,55px);line-height:1.02;letter-spacing:-.045em;margin:0 0 26px}
+.sme-copy{display:grid;grid-template-columns:1fr 1fr;gap:38px;max-width:980px}.sme-copy p{margin:0;color:var(--muted);font-size:15px}
+.sme-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px;border-top:1px solid rgba(22,139,135,.2);padding-top:24px}
+.sme-benefits>div{padding:0 26px;border-right:1px solid rgba(22,139,135,.18)}.sme-benefits>div:first-child{padding-left:0}.sme-benefits>div:last-child{border-right:0}
+.sme-benefits b,.sme-benefits span{display:block}.sme-benefits b{font-size:11px;letter-spacing:.055em;color:#168b87}.sme-benefits span{font-size:13px;color:var(--muted);margin-top:4px}
 
-/* Internal connected journeys: restore the large outlined index-page numeral language. */
-.journey-line .process-step .n,
-.journey-features .feature .num{
-  position:absolute;
-  top:-2px;
-  left:24px;
-  display:block;
-  font-size:64px;
-  line-height:1;
-  color:transparent;
-  -webkit-text-stroke:1px rgba(22,139,135,.28);
-  font-family:var(--sans);
-  font-weight:300;
-  letter-spacing:-.08em;
-  white-space:nowrap;
-}
-.journey-line .process-step:first-child .n,
+/* About: keep ghost numbers clear of the technical line and nodes */
+.journey-features{padding-top:76px}
+.journey-features:before{top:64px}
+.journey-features .feature{padding-top:48px;min-height:235px}
+.journey-features .feature:before{top:-20px;left:28px}
+.journey-features .feature:first-child:before{left:0}
+.journey-features .feature:not(:last-child):after{top:-35px}
+.journey-features .feature .num{top:-72px;left:28px;font-size:58px}
 .journey-features .feature:first-child .num{left:0}
+.journey-features .feature h3{margin-top:0}
 
 @media(max-width:980px){
-  .journey .section-head p{margin-bottom:54px}
-  .journey-line .process-step,
-  .journey-line .process-step:first-child,
-  .journey-features .feature,
-  .journey-features .feature:first-child{padding-top:94px;padding-bottom:48px}
-  .journey-line .process-step .n,
-  .journey-line .process-step:first-child .n,
-  .journey-features .feature .num,
-  .journey-features .feature:first-child .num{
-    position:absolute;
-    top:16px;
-    left:42px;
-    display:block;
-    font-size:68px;
-    line-height:.9;
-    color:transparent;
-    -webkit-text-stroke:1px rgba(22,139,135,.30);
-    font-family:var(--sans);
-    font-weight:300;
-    letter-spacing:-.08em;
-  }
-  .journey-line .process-step h3,
-  .journey-features .feature h3{margin-top:12px}
+ .sme-panel{grid-template-columns:1fr;padding:36px}.sme-icon{width:82px;height:82px;font-size:44px}.sme-copy{grid-template-columns:1fr}.sme-benefits{grid-template-columns:1fr}.sme-benefits>div,.sme-benefits>div:first-child{padding:14px 0;border-right:0;border-bottom:1px solid rgba(22,139,135,.15)}.sme-benefits>div:last-child{border-bottom:0}
+ .journey-features{padding:0;margin-left:4px}.journey-features .feature,.journey-features .feature:first-child{padding:16px 0 38px 38px}.journey-features .feature:before,.journey-features .feature:first-child:before{top:22px;left:-9px}.journey-features .feature .num,.journey-features .feature:first-child .num{position:static;font-size:12px;color:#168b87;-webkit-text-stroke:0}.journey-features .feature h3{margin-top:14px}
+}
+@media(max-width:680px){.journey,.intelligence,.services-editorial,.ethos{padding:66px 0}.sme-focus{padding-bottom:66px}.sme-panel{padding:28px 22px}.content-section{padding:62px 0}.page-cta{padding:58px 0}.cta{padding:56px 0}}
+
+/* REV 8: unified technical process timeline — number, then line/node, then content */
+@media(min-width:981px){
+ .journey-line{padding-top:0;margin-top:8px;overflow:visible}
+ .journey-line:before{top:74px;left:0;right:0}
+ .journey-line .process-step{padding:112px 30px 0;min-height:285px;overflow:visible}
+ .journey-line .process-step:first-child{padding-left:0}
+ .journey-line .process-step .n,.journey-line .process-step:first-child .n{top:0;left:0;font-size:52px;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(22,139,135,.32);letter-spacing:-.045em}
+ .journey-line .process-step:before,.journey-line .process-step:first-child:before{top:66px;left:0;width:13px;height:13px}
+ .journey-line .process-step:not(:last-child):after{top:55px;right:-8px;font-size:30px;line-height:30px}
+ .journey-line .process-step h3{margin:0 0 14px}
+}
+
+/* REV 9: agreed homepage hero viewport tightening */
+@media(min-width:981px){
+  .hero{min-height:0;padding:112px 0 46px}
+  .hero-grid{align-items:center}
+  .hero h1{font-size:clamp(64px,7.15vw,112px);margin-bottom:24px}
+  .hero-copy>p{font-size:18px;line-height:1.5}
+  .hero-rail>div{padding:23px 0 22px}
+  .hero-footer{display:none}
+}
+@media(max-width:980px){
+  .hero{padding-top:112px;min-height:0;padding-bottom:54px}
 }
 @media(max-width:680px){
-  .journey .section-head p{margin-bottom:44px}
+  .hero{padding-top:96px;min-height:0;padding-bottom:44px}
+}
+
+
+/* V7 Rev 10 — final pre-production snagging */
+@media(min-width:981px){
+  .main-nav{gap:15px;font-size:10px;letter-spacing:.045em;white-space:nowrap}
+  .nav-cta{padding-left:18px;margin-left:2px}
+  .brand img{max-width:225px}
+}
+.lifecycle-heading{display:block}
+.lifecycle-heading>div{max-width:1120px}
+.lifecycle-heading p{margin:26px 0 0;max-width:680px;font-size:17px;color:var(--muted)}
+/* One Pavilion type system: prevent legacy editorial serif callouts. */
+.statement,.impact{font-family:var(--sans)!important}
+/* Contact process uses the same technical journey treatment as other numbered processes. */
+.contact-journey{grid-template-columns:repeat(3,1fr)!important}
+@media(max-width:980px){.contact-journey{grid-template-columns:1fr!important}}
+
+/* V7 Rev 11 — typography and numbering consistency */
+/* Remove isolated legacy serif styling from customer-facing callouts. */
+.inner-note,.quote,.statement,.impact{font-family:var(--sans)!important;font-style:normal!important;font-weight:750;letter-spacing:-.025em}
+
+/* Numbered journeys: one restrained technical format across the site. */
+@media(min-width:981px){
+  .journey-line{padding-top:0;margin-top:8px}
+  .journey-line:before{top:34px}
+  .journey-line .process-step{padding:72px 30px 0;min-height:255px}
+  .journey-line .process-step:first-child{padding-left:0}
+  .journey-line .process-step .n,.journey-line .process-step:first-child .n{
+    top:0;left:0;font-family:var(--mono);font-size:12px;line-height:1;color:#168b87;
+    -webkit-text-stroke:0;letter-spacing:.12em;font-weight:700
+  }
+  .journey-line .process-step:before,.journey-line .process-step:first-child:before{top:26px;left:0;width:13px;height:13px}
+  .journey-line .process-step:not(:last-child):after{top:15px;right:-8px;font-size:30px;line-height:30px}
+  .journey-line .process-step h3{margin:0 0 14px}
+
+  .journey-features{padding-top:0;margin-top:8px}
+  .journey-features:before{top:34px}
+  .journey-features .feature,.journey-features .feature:first-child{padding-top:72px;min-height:235px}
+  .journey-features .feature .num,.journey-features .feature:first-child .num{
+    top:0;left:0;font-family:var(--mono);font-size:12px;line-height:1;color:#168b87;
+    -webkit-text-stroke:0;letter-spacing:.12em;font-weight:700
+  }
+  .journey-features .feature:before,.journey-features .feature:first-child:before{top:26px;left:0}
+  .journey-features .feature:not(:last-child):after{top:15px}
+  .journey-features .feature h3{margin-top:0}
+}
+.hero-keep{white-space:nowrap}
+
+/* V7 Rev 12 — restore approved navigation-era layout and large process numbering */
+/* Homepage lifecycle heading: supporting line stays left-aligned directly below headline. */
+.journey .section-head{
+  display:block!important;
+  grid-template-columns:none!important;
+  text-align:left!important;
+}
+.journey .section-head .micro,
+.journey .section-head h2,
+.journey .section-head p{
+  grid-column:auto!important;
+  text-align:left!important;
+  justify-self:start!important;
+}
+.journey .section-head h2{max-width:980px!important;margin:0 0 26px!important}
+.journey .section-head p{max-width:690px!important;margin:0 0 68px!important}
+
+/* Internal connected journeys: match the large outlined homepage number language without overlap. */
+@media(min-width:981px){
+  .journey-line{padding-top:0;margin-top:18px}
+  .journey-line:before{top:82px}
+  .journey-line .process-step,
+  .journey-line .process-step:first-child{padding:128px 30px 0;min-height:305px}
   .journey-line .process-step .n,
-  .journey-line .process-step:first-child .n,
+  .journey-line .process-step:first-child .n{
+    position:absolute!important;
+    top:0!important;
+    left:24px!important;
+    display:block!important;
+    font-family:var(--sans)!important;
+    font-size:76px!important;
+    line-height:.9!important;
+    font-weight:300!important;
+    letter-spacing:-.07em!important;
+    color:transparent!important;
+    -webkit-text-stroke:1px rgba(22,139,135,.30)!important;
+    white-space:nowrap!important;
+  }
+  .journey-line .process-step:first-child .n{left:0!important}
+  .journey-line .process-step:before,
+  .journey-line .process-step:first-child:before{top:74px!important;left:24px!important;width:15px!important;height:15px!important}
+  .journey-line .process-step:first-child:before{left:0!important}
+  .journey-line .process-step:not(:last-child):after{top:59px!important;right:-8px!important;font-size:34px!important;line-height:34px!important}
+  .journey-line .process-step h3{margin:0 0 14px!important}
+
+  .journey-features{padding-top:0;margin-top:18px}
+  .journey-features:before{top:82px}
+  .journey-features .feature,
+  .journey-features .feature:first-child{padding-top:128px;min-height:290px}
   .journey-features .feature .num,
-  .journey-features .feature:first-child .num{font-size:62px}
+  .journey-features .feature:first-child .num{
+    position:absolute!important;
+    top:0!important;
+    left:28px!important;
+    display:block!important;
+    font-family:var(--sans)!important;
+    font-size:76px!important;
+    line-height:.9!important;
+    font-weight:300!important;
+    letter-spacing:-.07em!important;
+    color:transparent!important;
+    -webkit-text-stroke:1px rgba(22,139,135,.30)!important;
+    white-space:nowrap!important;
+  }
+  .journey-features .feature:first-child .num{left:0!important}
+  .journey-features .feature:before,
+  .journey-features .feature:first-child:before{top:74px!important;left:28px!important}
+  .journey-features .feature:first-child:before{left:0!important}
+  .journey-features .feature:not(:last-child):after{top:59px!important}
+  .journey-features .feature h3{margin-top:0!important}
 }
