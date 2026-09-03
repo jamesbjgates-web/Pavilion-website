@@ -192,3 +192,19 @@
 @media(max-width:680px){
   .hero{padding-top:96px;min-height:0;padding-bottom:44px}
 }
+
+
+/* V7 Rev 10 — final pre-production snagging */
+@media(min-width:981px){
+  .main-nav{gap:15px;font-size:10px;letter-spacing:.045em;white-space:nowrap}
+  .nav-cta{padding-left:18px;margin-left:2px}
+  .brand img{max-width:225px}
+}
+.lifecycle-heading{display:block}
+.lifecycle-heading>div{max-width:1120px}
+.lifecycle-heading p{margin:26px 0 0;max-width:680px;font-size:17px;color:var(--muted)}
+/* One Pavilion type system: prevent legacy editorial serif callouts. */
+.statement,.impact{font-family:var(--sans)!important}
+/* Contact process uses the same technical journey treatment as other numbered processes. */
+.contact-journey{grid-template-columns:repeat(3,1fr)!important}
+@media(max-width:980px){.contact-journey{grid-template-columns:1fr!important}}
