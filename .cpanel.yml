@@ -21,3 +21,11 @@ deployment:
     - /bin/cp -R downloads $DEPLOYPATH
     - /bin/cp robots.txt $DEPLOYPATH
     - /bin/cp sitemap.xml $DEPLOYPATH
+# V7 PRIVATE PREVIEW - separate subdirectory; does not replace production files
+- /bin/mkdir -p ${DEPLOYPATH}v7-preview/
+- /bin/mkdir -p ${DEPLOYPATH}v7-preview/assets/
+- /bin/mkdir -p ${DEPLOYPATH}v7-preview/downloads/
+- /bin/cp v7-preview/index.html ${DEPLOYPATH}v7-preview/index.html
+- /bin/cp v7-preview/styles-v7.css ${DEPLOYPATH}v7-preview/styles-v7.css
+- /bin/cp v7-preview/assets/pavilion-logo-transparent.png ${DEPLOYPATH}v7-preview/assets/pavilion-logo-transparent.png
+- /bin/cp v7-preview/downloads/Pavilion_Tender_Intelligence_Example_Report_Fictional.pdf ${DEPLOYPATH}v7-preview/downloads/Pavilion_Tender_Intelligence_Example_Report_Fictional.pdf
