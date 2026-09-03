@@ -1,0 +1,18 @@
+PAVILION V7 GITHUB PREVIEW PACKAGE
+
+This package is an overlay for the existing V6 GitHub repository.
+DO NOT delete or replace the existing V6 site files.
+
+Add to the ROOT of the existing repository:
+  .cpanel.yml          (replace the existing .cpanel.yml with this revised file)
+  v7-preview/          (add this entire new folder)
+
+Do NOT upload v7-preview/index.html as the repository root index.html.
+The root index.html must remain the current V6 production homepage.
+
+After cPanel deployment:
+  Production V6: https://pspt.ltd/
+  V7 preview:    https://pspt.ltd/v7-preview/
+
+The V7 preview contains noindex/nofollow meta directives so it should not be indexed by search engines.
+Links from the V7 prototype to service/About/Contact pages deliberately go back to the live V6 pages.
